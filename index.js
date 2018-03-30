@@ -12,7 +12,7 @@ var randomWord = require('random-word')
 
 var newWordResult = function(result) {
 	correctCount = result
-	console.log("correct count index " + correctCount)
+	// console.log("correct count index " + correctCount)
 	// console.log(result)
 }
 
@@ -44,8 +44,8 @@ var newGame = function () {
 				wordTest.characterGuessed(answers.guess)
 				wordTest.newWord(newWordResult)
 				count++
-				console.log("correct count " + correctCount)
-				console.log("word length " + wordTest.letters.length)
+				// console.log("correct count " + correctCount)
+				// console.log("word length " + wordTest.letters.length)
 				if(correctCount === wordTest.letters.length) {
 					console.log("you guessed the word correctly!")
 					newGame()
